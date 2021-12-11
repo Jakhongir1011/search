@@ -1,0 +1,100 @@
+*{
+    font-family: 'J', sans-serif;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: 50px;
+    background-color: blue;
+}
+
+#btn{
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: chartreuse;
+    border: 1px solid chartreuse;
+    border-radius: 4px;
+    display: none;
+}
+
+.nav ul li {
+    height: 100%;
+}
+
+.nav  ul {
+    text-align: center;
+    line-height: 50px ;
+    display: flex;
+    list-style-type: none;
+    color: white;
+    justify-content: space-around;
+}
+
+li{
+    list-style-type: none;
+    cursor: pointer;
+    width: 18% ;
+}
+
+.nav ul >li:hover{
+    background-color: rebeccapurple;
+}
+
+@media screen and (max-width: 500px) {
+   
+    #btn {
+      display: block;
+     }
+    
+    .main{
+        background-color: white;
+    }
+  
+     .nav  .ul {
+         width: 30%;
+         top: 38px;
+         left: -10px;
+         z-index: 1;
+         position: absolute;
+        line-height: 40px ;
+        color: white;
+        display: block;
+        background-color: blue;
+        border-radius: 5px;
+        display: none;
+    }
+    
+    li{
+        list-style-type: none;
+        cursor: pointer;
+        width: 100% ;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
